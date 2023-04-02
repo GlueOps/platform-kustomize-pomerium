@@ -4,4 +4,4 @@ metadata:
   name: pomerium-proxy
   namespace: pomerium
   annotations:
-    external-dns.alpha.kubernetes.io/hostname: "$(EXTERNAL_DNS_HOSTNAME)"
+    external-dns.alpha.kubernetes.io/hostname: "configMapKeyRef:name=external-dns-config,key=hostname"
