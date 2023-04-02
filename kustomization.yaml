@@ -3,3 +3,6 @@ kind: Kustomization
 
 resources:
   - git::https://github.com/pomerium/ingress-controller.git//config/default?ref=v0.21.2
+patchesStrategicMerge:
+  - patch-proxy-external-dns.yaml
+
