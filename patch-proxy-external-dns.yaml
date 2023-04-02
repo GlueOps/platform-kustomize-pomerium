@@ -5,4 +5,4 @@ metadata:
   namespace: pomerium
   annotations:
     # Reference the variable
-    external-dns.alpha.kubernetes.io/hostname: "$(EXTERNAL_DNS_HOSTNAME)"
+    external-dns.alpha.kubernetes.io/hostname: "secure.test-30-np.venkata.onglueops.rocks"
