@@ -3,16 +3,4 @@ kind: Kustomization
 
 resources:
   - git::https://github.com/pomerium/ingress-controller.git//config/default?ref=v0.21.2
-
-# patchesStrategicMerge:
-#   - patch-proxy-external-dns.yaml
-
-# # Add the variable definition
-# vars:
-#   - name: EXTERNAL_DNS_HOSTNAME
-#     objref:
-#       kind: Service
-#       name: pomerium-proxy
-#       apiVersion: v1
-#     fieldref:
-#       fieldpath: metadata.annotations.external-dns.alpha.kubernetes.io/hostname
+ 
