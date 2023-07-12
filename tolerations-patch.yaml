@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pomerium
+spec:
+  template:
+    spec:
+      nodeSelector:
+        glueops.dev/role: "glueops-platform"
+      tolerations:
+        - key: "glueops.dev/role"
+          operator: "Equal"
+          value: "glueops-platform"
+          effect: "NoSchedule" 
