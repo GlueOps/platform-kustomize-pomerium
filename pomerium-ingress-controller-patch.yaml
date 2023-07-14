@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pomerium
+spec:
+  template:
+    spec:
+      containers:
+        - name: pomerium
+          image: pomerium/ingress-controller:sha-dd49d67
+          imagePullPolicy: Always
+      nodeSelector:
+        glueops.dev/role: "glueops-platform"
+      tolerations:
+        - key: "glueops.dev/role"
+          operator: "Equal"
+          value: "glueops-platform"
+          effect: "NoSchedule" 

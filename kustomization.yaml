@@ -4,3 +4,6 @@ kind: Kustomization
 resources:
   - git::https://github.com/pomerium/ingress-controller.git//config/default?ref=v0.22.2
  
+patchesStrategicMerge:
+  - pomerium-ingress-controller-patch.yaml
+  - gen-secrets-job-patch.yaml
