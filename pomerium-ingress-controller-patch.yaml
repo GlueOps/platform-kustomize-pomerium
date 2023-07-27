@@ -7,8 +7,16 @@ spec:
     spec:
       containers:
         - name: pomerium
+          imagePullPolicy: IfNotPresent
           image: pomerium/ingress-controller:sha-dd49d67
           imagePullPolicy: Always
+          resources:
+            limits:
+              cpu: 5
+              memory: 4Gi
+            requests:
+              cpu: 300m
+              memory: 200Mi
       nodeSelector:
         glueops.dev/role: "glueops-platform"
       tolerations:
