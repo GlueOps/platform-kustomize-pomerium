@@ -7,3 +7,4 @@ resources:
 patchesStrategicMerge:
   - pomerium-ingress-controller-patch.yaml
   - gen-secrets-job-patch.yaml
+  - svc.yaml
