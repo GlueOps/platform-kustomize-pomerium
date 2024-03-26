@@ -8,4 +8,3 @@ spec:
     - port: 9096
       targetPort: https
       protocol: TCP
-      name: https
