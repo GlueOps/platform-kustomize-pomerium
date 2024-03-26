@@ -4,4 +4,8 @@ metadata:
   name: pomerium-proxy
 spec:
   type: LoadBalancer
-  ports: []
+  ports:
+    - port: 9096
+      targetPort: https
+      protocol: TCP
+      name: test
