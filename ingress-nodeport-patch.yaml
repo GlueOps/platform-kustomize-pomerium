@@ -4,4 +4,7 @@ metadata:
   name: pomerium-proxy
   namespace: pomerium
 spec:
-  type: NodePort
+  externalIPs:
+    - 198.51.100.32
+  type: LoadBalancer
+
