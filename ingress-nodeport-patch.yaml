@@ -7,4 +7,5 @@ spec:
   externalIPs:
     - 198.51.100.32
   type: LoadBalancer
+  loadBalancerIP: 198.51.100.32
 
