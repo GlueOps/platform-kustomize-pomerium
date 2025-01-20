@@ -6,9 +6,10 @@ metadata:
   annotations:
     loxilb.io/liveness: "yes"
     loxilb.io/lbmode: "onearm"
+    loxilb.io/staticIP: "159.69.100.65"
+
 spec:
   externalTrafficPolicy: Local
   loadBalancerClass: loxilb.io/loxilb
-  loxilb.io/staticIP: "159.69.100.65"
    
 
