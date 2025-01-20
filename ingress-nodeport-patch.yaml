@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: pomerium-proxy
   namespace: pomerium
+  annotations:
+    loxilb.io/liveness: "yes"
+    loxilb.io/lbmode: "onearm"
 spec:
-  externalIPs:
-    - 198.51.100.32
-  type: LoadBalancer
-  loadBalancerIP: 198.51.100.32
+  externalTrafficPolicy: Local
+  loadBalancerClass: loxilb.io/loxilb
+   
 
