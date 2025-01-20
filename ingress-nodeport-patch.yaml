@@ -9,5 +9,6 @@ metadata:
 spec:
   externalTrafficPolicy: Local
   loadBalancerClass: loxilb.io/loxilb
+  loxilb.io/staticIP: "159.69.100.65"
    
 
