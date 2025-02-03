@@ -5,6 +5,10 @@ metadata:
 spec:
   type: NodePort
   externalTrafficPolicy: Local
+  externalIPs:
+    - 54.187.85.165
+    - 35.93.149.90
+    - 35.94.189.26
   ports:
     - port: 443
       targetPort: https
