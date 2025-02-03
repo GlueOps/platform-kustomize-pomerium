@@ -11,11 +11,6 @@ spec:
       protocol: TCP
       name: https
       nodePort: 30801  # Specify a nodePort value for TCP traffic on port 443
-    - port: 443
-      targetPort: quic
-      protocol: UDP
-      name: quic
-      nodePort: 30802  # Specify a nodePort value for UDP traffic on port 443
     - name: http
       targetPort: http
       protocol: TCP
