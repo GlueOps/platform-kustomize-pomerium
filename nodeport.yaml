@@ -6,11 +6,11 @@ spec:
   type: NodePort
   externalTrafficPolicy: Local
   ports:
-    - port: 443
-      targetPort: https
-      protocol: TCP
-      name: https
-      nodePort: 30801  # Specify a nodePort value for TCP traffic on port 443
+    # - port: 443
+    #   targetPort: https
+    #   protocol: TCP
+    #   name: https
+    #   nodePort: 30801  # Specify a nodePort value for TCP traffic on port 443
     - name: http
       targetPort: http
       protocol: TCP
