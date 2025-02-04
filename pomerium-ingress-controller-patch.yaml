@@ -9,6 +9,8 @@ spec:
         - name: pomerium
           imagePullPolicy: IfNotPresent
           image: ghcr.io/glueops/ingress-controller:latest
+          imagePullSecrets:
+            - name: dockerconfigjson-github-com
           resources:
             limits:
               cpu: 5
