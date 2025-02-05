@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pomerium-proxy
+spec:
+  type: NodePort
+  externalTrafficPolicy: Cluster
+  ports:
+    - port: 443
+      targetPort: https
+      protocol: TCP
+      name: https
+      nodePort: 30801  # Specify a nodePort value for TCP traffic on port 443
+    - name: http
+      targetPort: http
+      protocol: TCP
+      port: 80
+      nodePort: 30803  # Specify a nodePort value for HTTP traffic on port 80
