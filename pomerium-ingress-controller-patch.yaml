@@ -8,7 +8,7 @@ spec:
       containers:
         - name: pomerium
           imagePullPolicy: IfNotPresent
-          image: docker pull ghcr.io/glueops/ingress-controller-2:sha-fd28bb1@sha256:c1493c2f2c5ace5a85c2ceb79afb90188cb32fbfc9c794f193945069ae6feb1b
+          image: ghcr.io/glueops/ingress-controller-2:sha-fd28bb1@sha256:c1493c2f2c5ace5a85c2ceb79afb90188cb32fbfc9c794f193945069ae6feb1b
           imagePullSecrets:
             - name: dockerconfigjson-github-com
           resources:
