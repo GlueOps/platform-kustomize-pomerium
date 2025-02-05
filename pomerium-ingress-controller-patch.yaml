@@ -8,7 +8,7 @@ spec:
       containers:
         - name: pomerium
           imagePullPolicy: IfNotPresent
-          image: pomerium/ingress-controller:v0.28.0
+          image: pomerium/ingress-controller:0-28-exp
           imagePullSecrets:
             - name: dockerconfigjson-github-com
           resources:
