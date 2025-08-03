@@ -8,7 +8,7 @@ spec:
       containers:
         - name: pomerium
           imagePullPolicy: IfNotPresent
-          image: pomerium/ingress-controller:v0.27.2@sha256:ffdfd3be0f37ea1c04ba8ec46d215f7ff7ddd22d0b30a950a17256eaac1dd982
+          image: pomerium/ingress-controller:v0.29.6@sha256:0dfe7cd24722e59c4dcc44a8f17d34387e8193ed66cf1b99f2ab26de94d32cba
           resources:
             limits:
               cpu: 5
